@@ -1,3 +1,8 @@
-<h1>
-  {{title}}
-</h1>
+<div class="inventory-app">
+
+  <products-list
+    [productList]="products" <!-- input -->
+    (onProductSelected)="productWasSelected($event)"> <!-- output -->
+  </products-list>
+
+</div>>
